@@ -1,0 +1,46 @@
+<!DOCTYPE html><!--htmlを使用します-->
+<html lang="ja"><!--このページは日本語です-->
+<head><!--画面に映らない要素-->
+    <meta charset="UTF-8"><!--文字コード指定-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" /><!--画面サイズを機種に合わせる-->
+    <meta name="robots" content="noindex,follow"><!--検索では出てこない-->
+    <title>受験応援サイト</title><!--ページタイトル-->
+    <link rel="stylesheet" href="style.css" /><!--CSSの読み込み-->
+    <script src="script.js" defer></script><!--JavaScriptの読み込み-->
+</head>
+<body><!--画面に映る要素-->
+    <header class="site-header"><!--ヘッダー-->
+        受験応援サイト
+    </header>
+    <hr><!--横棒-->
+    <main><!--メイン要素-->
+        <div class="main-layout">
+            <section class="input-grade"><!--成績の入力欄-->
+                <h2>成績を入力</h2><!--小見出し-->
+                <div class="input-grade-position" id="input-grade"></div><!--成績入力欄-->
+                <label for="mode-select">モード：</label><!--ラベル-->
+           
+                <select id="mode-select"><!--モードセレクト-->
+                    <option value="five">5を多く</option><!--選択肢１-->
+                    <option value="four">4を多く</option><!--選択肢２-->
+                </select>
+            </section>
+            <section class="required-average"><!--必要評定平均-->
+                <h2>必要評定平均</h2>
+                <input id="input-goal-average" type="number" min="0.0" max="5" step="0.1" value="4.0">
+                <h2>残り授業数</h2>
+                <input id="input-rest-lesson-count" type="number" min="0" step="1" value="10">つ
+                <br>
+                <button id="run-system">判定</button>
+            </section>
+        </div>
+        <section class="show-results">
+            <h2>全体必要成績</h2>
+            <div id="display-results"></div>
+            <h2> 部分必要成績 </h2>
+            <div id="display-results2"></div>
+           
+        </section>
+    </main>
+</body>
+</html>

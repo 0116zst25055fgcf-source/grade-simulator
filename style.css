@@ -1,0 +1,116 @@
+@charset "UTF-8";/*文字コード指定*/
+.main-layout{
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 二つのカードの間隔 */
+    margin-top: 30px;
+}
+.site-header{ /*ヘッダー*/
+    background-color: cornflowerblue; /* 背景色 */
+    color: white;                     /* 文字色 */
+    padding: 20px 40px;               /* 内側の余白 */
+    text-align: center;               /* 中央揃え */
+    font-size: clamp(28px, 6vw, 60px);/* 画面幅に応じて可変 */
+    font-weight: bold;                /* 太字 */
+    border-radius: 12px;              /* 角を少し丸く */
+    margin: 30px auto;                /* 上下に余白＋中央寄せ */
+    width: fit-content;               /* 必要な幅だけ使う */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ふんわり影 */
+}
+.input-grade,
+.required-average {
+    width: 420px;                 /* 横長のカード */
+    background-color: cornflowerblue;
+    color: white;
+    padding: 25px 35px;           /* 内側の余白 */
+    border-radius: 12px;          /* 角丸 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* 影 */
+    font-size: clamp(24px, 2vw, 40px);
+    text-align: center;
+}
+.input-grade-position {
+    margin-top: 20px;
+}
+.input-grade-position label,
+.input-grade-position input {
+    font-size: 22px;
+}
+.input-grade-position input {
+    width: 70px;
+    height: 38px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+}
+#mode-select {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.grade-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.required-average input{
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+.show-results{
+    font-size: clamp(32px,2vw,70px);
+    text-align: center;
+    margin-top: 30px;
+}
+#run-system {
+    padding: 14px 32px;               /* ボタンの大きさ */
+    font-size: 22px;                  /* 文字サイズ */
+    font-weight: bold;                /* 少し太字で見やすく */
+    background-color: #333333;        /* 教育サイト向けの青 */
+    color: white;                     /* 白文字で視認性UP */
+    border: none;                     /* 枠線なしでスッキリ */
+    border-radius: 10px;              /* 角丸で優しい印象 */
+    cursor: pointer;                  /* ホバー時に手の形 */
+    transition: 0.25s;                /* ホバーのアニメーション */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* ふんわり影 */
+    margin-top: 20px;                 /* 上に余白 */
+}
+#run-system:hover {
+    background-color: #222222;        /* 少し濃い青に変化 */
+    transform: translateY(-2px);      /* ちょっと浮く */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25); /* 影を強く */
+}
+#run-system:active {
+    transform: translateY(0);         /* 押した感を出す */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+#display-results {
+    width: 420px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 50px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+    text-align: center;
+}
+#display-results2 {
+    width: 420px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 50px;
+    margin: 20px auto 100px;
+    line-height: 1.6;
+    text-align: center;
+}
